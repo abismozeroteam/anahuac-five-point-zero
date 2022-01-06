@@ -1,6 +1,6 @@
 .intro-baner {
     padding: calc(3rem + 6vw) calc(3rem + 6vh);
-    min-height: 45vh;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--negro-anahuac);
+    background-blend-mode:screen;
     opacity: 0.3;
     top: 0;
     left: 0;
@@ -22,28 +23,38 @@
     overflow: hidden;
 }
 .concepto-container {
-    padding: calc(1rem + 3vw) calc(2rem + 3vh) calc(2.5rem + 3vw) calc(2rem + 3vh);
-    background-image: linear-gradient(to bottom, var(--negro-anahuac), var(--naranja-anahuac));
+    padding: calc(1rem + 3vw) 0 0 0;
+    border-top: solid var(--naranja-anahuac) 1px;
+    background-color: var(--negro-anahuac);
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 2rem;
 }
+.concepto-container h2,
+.concepto-container h4 {
+    padding: 0 calc(2rem + 3vh);
+}
 .els-concepto {
     padding-top: 2rem;
-    border-top: var(--naranja-anahuac) 1px solid;
+    padding-bottom: calc(1rem + 3vw);
     display: flex;
     gap: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: url('../../Util/Images/lines.svg');
+    background-size: cover;
+    background-position: top;
 }
 .el-concepto {
     padding: 2rem;
-    background-color: var(--negro-anahuac);
+    background-color: var(--negro-anahuac-transparente);
     flex-basis: calc(100%/3);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: var(--naranja-anahuac) 1px solid;
 }
 
 @media (max-width: 600px) {

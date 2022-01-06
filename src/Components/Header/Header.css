@@ -1,23 +1,20 @@
 .App-header {
-    background-image: url('../../Util/Images/lines/lines-1.svg');
+    background-image: linear-gradient(to bottom, var(--negro-anahuac), rgba(255,255,255,0));
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 1.5rem;
-  }
-  .App-header h3,
-  .App-header h4 {
-    transform: scale(0.9);
+    min-height: 10rem;
+    border-bottom: var(--naranja-anahuac) 1px solid;
   }
   
   .header-title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    text-align: left;
+    align-content: flex-start;
   }
   
   .manifiesto {

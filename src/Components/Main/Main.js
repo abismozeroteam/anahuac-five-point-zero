@@ -8,7 +8,7 @@ function Main() {
             </div>
             <div className='concepto-container'>
                 <h2 className='orange'>CONCEPTO</h2>
-                <h4 className='light'>Los pilares que definen la vida humana</h4>
+                <h4 className='light'>Los pilares que definen y conectan la vida humana</h4>
                 <div className='els-concepto'>
                     <div className='el-concepto'>
                         <h4 className='orange'>NATURALEZA</h4>

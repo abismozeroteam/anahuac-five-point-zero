@@ -29,10 +29,8 @@ function Header() {
   return (
     <header id="app-header" className="App-header">
       <div className="header-title">
-        <h3>
-          ANÁHUAC <span className="heavy">5.0</span>
-        </h3>
-        <h4 className="manifiesto orange">Manifiesto del futuro</h4>
+        <h4 className="orange heavy">ANÁHUAC <span className="black">5.0</span></h4>
+        <h5 className="manifiesto">Manifiesto del futuro</h5>
       </div>
       <canvas id="header-triangle"></canvas>
     </header>
