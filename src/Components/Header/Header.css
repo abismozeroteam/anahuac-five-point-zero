@@ -1,12 +1,10 @@
 .App-header {
-    background-image: url('../../Util/Images/lines.svg');
+    background-image: url('../../Util/Images/lines/lines-1.svg');
     background-position: center;
     background-size: cover;
-    border-bottom: solid var(--naranja-anahuac) 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
     padding: 1.5rem 1.5rem;
   }
   .App-header h3,

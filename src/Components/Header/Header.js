@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function Header() {
   const headerAnimation = () => {
     const now = new Date();
-    const speed = now.getMilliseconds() * .02;
+    const speed = now.getMilliseconds() * .006;
     const amplitude = 3;
     const movex = Math.sin(speed)*amplitude;
     const movey = Math.cos(speed)*amplitude;

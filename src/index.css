@@ -45,7 +45,9 @@ table {
 /* Variables globales */
 :root {
   --naranja-anahuac: rgba(255, 38, 0, 1);
+  --naranja-anahuac-transparente: rgba(255, 38, 0, 0.5);
   --negro-anahuac: rgba(24, 22, 34, 1);
+  --negro-anahuac-transparente: rgba(24, 22, 34, 0.5);
 }
 /* Estilos globales */
 * {
@@ -54,6 +56,7 @@ table {
 html {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  color: white;
 }
 body {
   background-color: var(--negro-anahuac);
@@ -64,26 +67,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: calc(2rem + 2vmin);
+  line-height: calc(2.5rem + 2vmin);
 }
 h2 {
   font-size: calc(2rem + 1vmin);
+  line-height: calc(2.5rem + 1vmin);
 }
 h3 {
   font-size: calc(1rem + 2vmin);
+  line-height: calc(1.5rem + 2vmin);
 }
 h4 {
   font-size: calc(1rem + 1vmin);
+  line-height: calc(1.5rem + 1vmin);
 }
 h5 {
   font-size: calc(0.5rem + 2vmin);
+  line-height: calc(1rem + 2vmin);
 }
 h6 {
   font-size: calc(0.5rem + 1vmin);
+  line-height: calc(1rem + 1vmin);
+}
+p {
+  font-size: calc(0.5rem + 1vmin);
+  line-height: calc(1rem + 1vmin);
 }
 em {
   font-variation-settings: 'wght' 700;
 }
 /* Variation */
+.thin {
+  font-variation-settings: 'wght' 200;
+}
+.light {
+  font-variation-settings: 'wght' 300;
+}
+.regular {
+  font-variation-settings: 'wght' 400;
+}
+.medium {
+  font-variation-settings: 'wght' 500;
+}
+.semibold {
+  font-variation-settings: 'wght' 600;
+}
+.bold {
+  font-variation-settings: 'wght' 700;
+}
+.bolder {
+  font-variation-settings: 'wght' 700;
+}
+.black {
+  font-variation-settings: 'wght' 900;
+}
 .heavy {
   font-variation-settings: 'wght' 1000;
 }
