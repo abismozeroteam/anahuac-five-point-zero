@@ -36,8 +36,7 @@
     padding: 0 calc(2rem + 3vh);
 }
 .els-concepto {
-    padding-top: 2rem;
-    padding-bottom: calc(1rem + 3vw);
+    padding: 2rem 2rem calc(1rem + 3vw) 2rem;
     display: flex;
     gap: 1rem;
     display: flex;
