@@ -1,5 +1,6 @@
 import './Logo.css';
 import { useState, useEffect } from "react";
+import logoStatic from '../../Util/Images/logo-static.svg';
 
 const identificadores = ['5.0', 'FivePointZero', 'CincoPuntoCero', 'CinqPointZéro', 'CinquePuntoZero', 'VijfPuntNul', 'FünfPunktNull'];
 
@@ -28,7 +29,7 @@ function Logo() {
         const amplitude = 20;
         const movex = Math.sin(frame)*amplitude;
         const movey = Math.cos(frame)*amplitude;
-        const inc = 15;
+        //const inc = 15;
         // Draw
         const c = document.getElementById("logo-triangle");
         const coordinates = {
@@ -47,13 +48,20 @@ function Logo() {
         ctx.lineTo(coordinates.p3.x, coordinates.p3.y);
         ctx.closePath();
         ctx.stroke();
-        // Triangle 2
-        ctx.beginPath();
-        ctx.moveTo(coordinates.p1.x+inc+movex*.5, coordinates.p1.y-inc*.6);
-        ctx.lineTo(coordinates.p2.x + movex, coordinates.p2.y);
-        ctx.lineTo(coordinates.p3.x-inc-movex*1.2, coordinates.p3.y-inc*.6+movey*.6);
-        ctx.closePath();
-        ctx.stroke();
+        // // Triangle 2
+        // ctx.beginPath();
+        // ctx.moveTo(coordinates.p1.x+inc+movex*.5, coordinates.p1.y-inc*.6);
+        // ctx.lineTo(coordinates.p2.x + movex, coordinates.p2.y);
+        // ctx.lineTo(coordinates.p3.x-inc-movex*1.2, coordinates.p3.y-inc*.6+movey*.6);
+        // ctx.closePath();
+        // ctx.stroke();
+        // // Triangle 3
+        // ctx.beginPath();
+        // ctx.moveTo(coordinates.p1.x+inc+movex*.5, coordinates.p1.y-inc*.6);
+        // ctx.lineTo(coordinates.p2.x + movex, coordinates.p2.y);
+        // ctx.lineTo(coordinates.p3.x-inc-movex*1.2, coordinates.p3.y-inc*.6+movey*.6);
+        // ctx.closePath();
+        // ctx.stroke();
         // Text
         ctx.font = "1.5rem Nunito";
         ctx.save();
@@ -65,11 +73,14 @@ function Logo() {
         ctx.restore();
     };
 
-    useEffect(() => {
+    useEffect(()=> {
         triangle();
-        const triangInterval = setInterval( () => {setFrame(frame+1)}, 100);
-        return () => clearInterval(triangInterval);
     });
+
+    useEffect(() => {
+        const triangInterval = setInterval( () => {setFrame(frame => frame+1)}, 150);
+        return () => clearInterval(triangInterval);
+    }, []);
 
     useEffect(() => {
         const idMasUno = setInterval( () => {
@@ -106,6 +117,7 @@ function Logo() {
             <h3 className='orange'>Gama cromática</h3>
             <p>La combinación cromática que se eligió combina la fuerza de un nuevo anaranjado Anáhuac con la elegancia y novedad de un negro azulado que ayuda a crear un contraste ideal.</p>
             <div className='gama'></div>
+            <div className='logo-static' style={{backgroundImage: `url(${logoStatic})`}}></div>
         </section>
     )
 }
