@@ -55,7 +55,7 @@ table {
 }
 html {
   font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 body {
@@ -66,35 +66,49 @@ h1, h2, h3, h4, h5, h6 {
   font-variation-settings: 'wght' 700;
 }
 h1 {
+  font-size: calc(3rem + 1.5vmin);
+  line-height: calc(3.5rem + 1.5vmin);
+}
+h2 {
   font-size: calc(2.5rem + 1.5vmin);
   line-height: calc(3rem + 1.5vmin);
 }
-h2 {
+h3 {
   font-size: calc(2rem + 1.5vmin);
   line-height: calc(2.5rem + 1.5vmin);
 }
-h3 {
+h4 {
   font-size: calc(1.5rem + 1.5vmin);
   line-height: calc(2rem + 1.5vmin);
 }
-h4 {
+h5 {
   font-size: calc(1rem + 1.5vmin);
   line-height: calc(1.5rem + 1.5vmin);
 }
-h5 {
-  font-size: calc(0.5rem + 1.5vmin);
-  line-height: calc(1rem + 1.5vmin);
-}
 h6 {
-  font-size: calc(0.5rem + 1vmin);
-  line-height: calc(1rem + 1vmin);
+  font-size: calc(1rem + 1vmin);
+  line-height: calc(1.5rem + 1vmin);
 }
 p {
-  font-size: calc(0.5rem + 1vmin);
-  line-height: calc(1rem + 1vmin);
+  font-size: calc(1rem + 1vmin);
+  line-height: calc(1.5rem + 1vmin);
 }
 em {
+  font-style: italic;
+}
+strong {
   font-variation-settings: 'wght' 700;
+}
+a {
+  color: var(--naranja-anahuac);
+  transition: font-variation-settings 300ms ease,
+              color 200ms ease;
+}
+a:hover {
+  font-variation-settings: 'wght' 800;
+}
+a:active {
+  color: var(--negro-anahuac);
 }
 /* Variation */
 .thin {
@@ -112,17 +126,17 @@ em {
 .semibold {
   font-variation-settings: 'wght' 600;
 }
-.bold {
-  font-variation-settings: 'wght' 700;
-}
 .bolder {
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' 800;
 }
 .heavy {
   font-variation-settings: 'wght' 900;
 }
 .black {
   font-variation-settings: 'wght' 1000;
+}
+.ital {
+  font-style: italic;
 }
 /* Color */
 .orange {

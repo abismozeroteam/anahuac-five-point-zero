@@ -15,7 +15,7 @@ function Header() {
     ctx.moveTo(c.width*.1, c.height*.9 - movey);
     ctx.lineTo(c.width * 0.5, c.height*.1 + movey);
     ctx.lineTo(c.width*.9 - movex, c.height*.9 - movey);
-    ctx.lineTo(c.width*.1, c.height*.9 - movey);
+    ctx.closePath();
     ctx.strokeStyle = "white";
     ctx.lineWidth = 4;
     ctx.stroke();

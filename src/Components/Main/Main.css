@@ -5,6 +5,11 @@
     flex-direction: column;
     justify-content: center;
 }
+.intro-baner h2 {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .intro-baner:before {
     content: '';
     background-image: url(../../Util/Images/popocatepetl.jpg);
@@ -59,5 +64,8 @@
 @media (max-width: 600px) {
     .els-concepto {
         flex-direction: column;
+    }
+    .el-concepto {
+        width: 100%;
     }
 }

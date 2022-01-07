@@ -1,0 +1,69 @@
+#logo-section {
+    padding-top: 4rem;
+    background-color: white;
+    color: var(--negro-anahuac);
+}
+#logo-section p{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo-section canvas {
+    margin-left: auto;
+    margin-right: auto;
+    padding: none;
+}
+#logo-triangle {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+#logo-tipo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#logo-tipo h5{
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+}
+.fam-tipo {
+    padding: 2rem 0;
+}
+.nunito-sample {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+.nunito-sample p {
+    font-size: 2.1rem;
+    max-width: 0%;
+}
+.variable {
+    padding: 2rem 0 1rem 0;
+    font-size: 4rem;
+    font-variation-settings: 'wght' 200;
+    animation: vars 4000ms infinite both;
+}
+@keyframes vars {
+	0% {
+		font-variation-settings: 'wght' 200;
+	}
+	50% {
+		font-variation-settings: 'wght' 1000;
+	}
+	100% {
+		font-variation-settings: 'wght' 200;
+	}
+}
+.gama {
+    height: 20vh;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, var(--negro-anahuac), var(--naranja-anahuac));
+}
