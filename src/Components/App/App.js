@@ -3,6 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Logo from '../Logo/Logo';
+import Cierre from '../Cierre/Cierre';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Main />
       <Logo />
+      <Cierre />
     </div>
   );
 }
