@@ -5,7 +5,7 @@ function Cierre() {
         <section id="cierre" className='section-container'>
             <h3>¿Listo para el futuro?</h3>
             <hr/>
-            <p>Maracuyá Atelier 2022 ©</p>
+            <p>Maracuyá Atelier S.A. de C.V. 2022 ©</p>
         </section>
     )
 }
